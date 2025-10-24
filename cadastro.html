@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Fácil - Cadastro</title>
+    <link rel="stylesheet" href="stylecadastro.css">
+    <link rel="icon" href="IMG/1000105608-removebg-preview.png">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="IMG/voltar.png" alt="" class="btn-voltar">
+        </a>
+    </nav>
+    <div class="container">
+        <h1>Cadastro</h1>
+
+        <form id="cadastroForm" autocomplete="off">
+            <div class="input-group">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
+                </div>
+                <input type="text" placeholder="Insira seu nome" required autocomplete="off">
+            </div>
+
+            <div class="input-group">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                </div>
+                <input type="email" placeholder="Insira seu email" required autocomplete="off">
+            </div>
+
+            <div class="input-group">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
+                    </svg>
+                </div>
+                <input type="password" placeholder="Crie sua senha" required autocomplete="new-password">
+            </div>
+
+            <div class="input-group">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
+                    </svg>
+                </div>
+                <input type="password" placeholder="Confirme sua senha" required autocomplete="new-password">
+            </div>
+
+            <div class="social-login">
+                <p>Entrar com:</p>
+                <div class="social-buttons">
+                    <button type="button" class="social-btn" onclick="loginGoogle()">
+                        <img src="IMG/google.png" alt="">
+                    </button>
+                    <a href="loginfuncionarios.html">
+                        <button type="button" class="social-btn" onclick="loginID()">
+                            <img src="IMG/id.png" alt="">
+                        </button>
+                    </a>
+                    <button type="button" class="social-btn" onclick="loginFacebook()">
+                        <img src="IMG/facebook.jpg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-cadastrar">Cadastrar</button>
+        </form>
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="scriptdatabase.js"></script>
+    <script src="scriptcadastro.js"></script>
+</body>
+
+</html>

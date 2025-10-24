@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Fácil - Entrar</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="icon" href="IMG/1000105608-removebg-preview.png">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Entrar</h2>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <img src="IMG/icone.png" alt="">
+                <input type="text" placeholder="Digite seu Login" required>
+            </div>
+
+            <div class="input-group">
+                <img src="IMG/cadeado.png" alt="">
+                <input type="password" placeholder="Digite sua senha" required>
+            </div>
+
+            <div class="forgot-password">
+                <a href="#">Esqueci minha Senha</a>
+            </div>
+
+            <div class="social-login">
+                <p>Entrar com:</p>
+                <div class="social-icons">
+                    <button type="button">
+                        <img src="IMG/google.png" alt="">
+                    </button>
+                    <a href="loginfuncionarios.html">
+                        <button type="button">
+                            <img src="IMG/id.png" alt="">
+                        </button>
+                    </a>
+                    <button type="button">
+                        <img src="IMG/facebook.jpg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Entrar</button>
+        </form>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

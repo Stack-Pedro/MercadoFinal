@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Fácil - Produtos</title>
+    <link rel="stylesheet" href="stylecompras.css">
+    <link rel="icon" href="IMG/1000105608-removebg-preview.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="search-icon" onclick="showScreen('home')">
+                <img src="IMG/icone busca.png" alt="">
+            </div>
+
+            <button class="btn btn-secondary" onclick="showScreen('laticinios')">Laticínios</button>
+            <button class="btn btn-secondary" onclick="showScreen('cereais')">Cereais</button>
+            <button class="btn btn-secondary" onclick="showScreen('hortifruti')">Hortifruti</button>
+            <button class="btn btn-secondary" onclick="showScreen('carnes')">Carnes</button>
+            <button class="btn btn-secondary" onclick="showScreen('frios')">Frios</button>
+            <button class="btn btn-secondary" onclick="showScreen('mercearia')">Mercearia</button>
+            <button class="btn btn-secondary" onclick="showScreen('padaria')">Padaria</button>
+            <button class="btn btn-secondary" onclick="showScreen('bebidas')">Bebidas</button>
+            <button class="btn btn-secondary" onclick="showScreen('higiene')">Higiene e Limpeza</button>
+            <button class="btn btn-secondary" onclick="showScreen('petshop')">Pet-Shop</button>
+        </div>
+        <div class="linha-vertical"></div>
+
+        <div class="main-content">
+            <div class="screen active" id="homeScreen">
+                <div class="search-area">
+                    <div class="search-illustration">
+                        <img src="IMG/1000105608-removebg-preview.png" alt="">
+                    </div>
+                    <div class="search-text">Busca Fácil</div>
+                </div>
+            </div>
+            <div class="screen" id="laticiniosScreen">
+                <div class="products-grid">
+                    <button class="product-btn" onclick="showProduct('leite')">Leite</button>
+                    <button class="product-btn" onclick="showProduct('creme')">Creme de Leite</button>
+                    <button class="product-btn" onclick="showProduct('condensado')">Leite Condesado</button>
+                    <button class="product-btn" onclick="showProduct('queijo')">Queijo Ralado</button>
+                    <button class="product-btn" onclick="showProduct('requeijao')">Requeijão</button>
+                </div>
+            </div>
+            <div class="screen" id="leiteScreen">
+                <div class="product-detail">
+                    <div class="product-left">
+                        <div class="product-image">🥛</div>
+
+                        <div class="product-tabs">
+                            <button class="tab-btn">Leite</button>
+                            <button class="tab-btn">Creme de Leite</button>
+                            <button class="tab-btn">Requeijão</button>
+                            <button class="tab-btn">Que jio</button>
+                            <button class="tab-btn">Iogurte</button>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>Receitas</h3>
+                            <p>Doce de leite</p>
+                            <p>Sorvete Caseiro</p>
+                            <p>Pudim</p>
+                            <p>Arroz Doce</p>
+                            <p>Manjar</p>
+                            <p>Canjica</p>
+                        </div>
+                    </div>
+
+                    <div class="product-right">
+                        <div class="product-header">
+                            <div class="product-name">Leite (integral)</div>
+                            <div class="product-price">R$ 5,99</div>
+                            <button class="add-cart-btn">Adicionar ao carrinho</button>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>Informações</h3>
+                            <div class="info-grid">
+                                <span class="info-label">Validade</span>
+                                <span>Marca</span>
+
+                                <span class="info-label">Distribuidor</span>
+                                <span>Alergênicos</span>
+
+                                <span class="info-label">Marca</span>
+                                <span>Armazenamento</span>
+
+                                <span class="info-label">Peso/Volume</span>
+                                <span></span>
+
+                                <span class="info-label">Código de Barras</span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="screen" id="cereaisScreen">
+                <div class="products-grid">
+                    <button class="product-btn">Arroz</button>
+                    <button class="product-btn">Feijão</button>
+                    <button class="product-btn">Macarrão</button>
+                </div>
+            </div>
+
+            <div class="screen" id="hortigrutiScreen">
+                <div class="products-grid">
+                    <button class="product-btn">Alface</button>
+                    <button class="product-btn">Tomate</button>
+                    <button class="product-btn">Cenoura</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scriptcompras.js"></script>
+</body>
+
+</html>

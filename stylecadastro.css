@@ -1,0 +1,158 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #18175d;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #7f7f7f;
+            border-radius: 30px;
+            padding: 50px 60px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 720px;
+            width: 100%;
+            position: relative;
+        }
+
+        .btn-voltar {
+            position: fixed;
+            width: 80px;
+            height: 80px;
+            top: 45px;
+            left: 30px;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            position: absolute;
+            left: 15px;
+            width: 24px;
+            height: 24px;
+            z-index: 1;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px 15px 15px 50px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        input::placeholder {
+            color: #999;
+        }
+
+        .social-login {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .social-login p {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .btn-cadastrar {
+            width: 60%;
+            margin-left: 20%;
+            padding: 15px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn-cadastrar:hover {
+            background: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-cadastrar:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .btn-voltar {
+                position: fixed;
+                top: 20px;
+                left: 30px;
+            }
+
+            .container {
+                padding: 40px 30px;
+            }
+        }
